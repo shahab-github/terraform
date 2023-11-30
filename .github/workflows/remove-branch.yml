@@ -12,4 +12,6 @@ jobs:
     steps:
       - uses: fpicalausa/remove-stale-branches@v1
         with:
+          days-before-branch-stale: 0
+          days-before-branch-delete: 7
           dry-run: true # Check out the console output before setting this to false
